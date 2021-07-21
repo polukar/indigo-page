@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Главная :: Frontend pack</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <meta name="description" content="Description">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="title">
+    <meta property="twitter:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="twitter:description" content="description">
+    <meta property="og:image" content="assets/share.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body class="body dev">
+    <div class="header">
+      <div class="header__item"><a class="header__logo" href="#main">   
+          <svg xmlns="http://www.w3.org/2000/svg" width="220.435" height="71.48" viewBox="0 0 220.435 71.48">
+            <g id="logo" transform="translate(-63.5 -197)">
+              <g id="Group_2" data-name="Group 2" transform="translate(63.5 210.576)">
+                <path id="Path_3" data-name="Path 3" d="M-2179.857-358l-14.483,8.951v25.574l7.159,4.348,17.939-10.741v4.433l-17.939,11-10.863-6.393v-26.256l-3.621,2.387v26.085l14.483,8.354,21.642-13.213V-331.4l-17.939-10.741,3.621-2.557,18.268,11.167v12.7l-21.889,12.957,3.621,2.557,21.478-13.3v-17.049l-21.478-13.384-6.83,4.348v21.738l-3.868-2.472v-21.652l10.7-6.479,21.478,13.128V-344.7Z" transform="translate(2201.664 358.001)" fill="#241d46"></path>
+              </g>
+              <g id="Group_4" data-name="Group 4" transform="translate(120.935 197)">
+                <text id="Indigo" transform="translate(81 54)" fill="#fff" font-size="57" font-family="SFProDisplay-Bold, SF Pro Display" font-weight="700">
+                  <tspan x="-81.005" y="0">Indigo</tspan>
+                </text>
+                <text id="Investment_Group" data-name="Investment Group" transform="translate(41 68.48)" fill="#fff" font-size="11" font-family="SFProDisplay-Regular, SF Pro Display" opacity="0.5">
+                  <tspan x="-40.944" y="0">Investment Group</tspan>
+                </text>
+              </g>
+            </g>
+          </svg></a></div>
+      <div class="header__item">
+        <nav class="nav"><a class="nav__link" href="#">Подробно о нас</a><a class="nav__link" href="#">Подробнее о торговле</a><a class="nav__link" href="#">Условия</a><a class="nav__link" href="#">Партнерство с нами</a><a class="nav__link" href="#">FAQ</a><a class="nav__link" href="#">Контакты</a></nav>
+        <div class="header__btns"><a class="header__btn --btn-border" href="#">Войти</a><a class="header__btn --btn-white" href="#">Регистрация</a></div>
+        <div class="header__lang"><img src="./assets/img/header/ru.svg" alt="">
+          <div class="lang__drop"><a class="lang__item" href="#"> <img src="./assets/img/header/ru.svg" alt="">Русский</a><a class="lang__item" href="#"> <img src="./assets/img/header/ger.svg" alt="">Немецкий</a><a class="lang__item" href="#"> <img src="./assets/img/header/gb.svg" alt="">Английский</a></div>
+        </div>
+        <div class="header__burger">
+           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19">
+<g id="Group_161" data-name="Group 161" transform="translate(-323.5 -26.5)">
+<line id="Line_64" data-name="Line 64" x2="25" transform="translate(325 28)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+<line id="Line_65" data-name="Line 65" x2="25" transform="translate(325 36)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+<line id="Line_66" data-name="Line 66" x2="25" transform="translate(325 44)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+</g>
+</svg>
+        </div>
+      </div>
+    </div>
+    <div class="mobile__nav"> 
+      <div class="mobile__nav-header"> 
+        <div class="mobile__nav-logo"><a class="header__logo" href="#main">   
+            <svg xmlns="http://www.w3.org/2000/svg" width="220.435" height="71.48" viewBox="0 0 220.435 71.48">
+              <g id="logo" transform="translate(-63.5 -197)">
+                <g id="Group_2" data-name="Group 2" transform="translate(63.5 210.576)">
+                  <path id="Path_3" data-name="Path 3" d="M-2179.857-358l-14.483,8.951v25.574l7.159,4.348,17.939-10.741v4.433l-17.939,11-10.863-6.393v-26.256l-3.621,2.387v26.085l14.483,8.354,21.642-13.213V-331.4l-17.939-10.741,3.621-2.557,18.268,11.167v12.7l-21.889,12.957,3.621,2.557,21.478-13.3v-17.049l-21.478-13.384-6.83,4.348v21.738l-3.868-2.472v-21.652l10.7-6.479,21.478,13.128V-344.7Z" transform="translate(2201.664 358.001)" fill="#241d46"></path>
+                </g>
+                <g id="Group_4" data-name="Group 4" transform="translate(120.935 197)">
+                  <text id="Indigo" transform="translate(81 54)" fill="#fff" font-size="57" font-family="SFProDisplay-Bold, SF Pro Display" font-weight="700">
+                    <tspan x="-81.005" y="0">Indigo</tspan>
+                  </text>
+                  <text id="Investment_Group" data-name="Investment Group" transform="translate(41 68.48)" fill="#fff" font-size="11" font-family="SFProDisplay-Regular, SF Pro Display" opacity="0.5">
+                    <tspan x="-40.944" y="0">Investment Group</tspan>
+                  </text>
+                </g>
+              </g>
+            </svg></a></div>
+        <div class="mobile__nav-btns"> 
+          <div class="mobile__nav-lang"> <img src="./assets/img/header/ru.svg" alt="">
+            <div class="lang__drop"><a class="lang__item" href="#"> <img src="./assets/img/header/ru.svg" alt="">Русский</a><a class="lang__item" href="#"> <img src="./assets/img/header/ger.svg" alt="">Немецкий</a><a class="lang__item" href="#"> <img src="./assets/img/header/gb.svg" alt="">Английский </a></div>
+          </div>
+          <div class="mobile__nav-close"><svg xmlns="http://www.w3.org/2000/svg" width="19.243" height="19.243" viewBox="0 0 19.243 19.243">
+<g id="Group_331" data-name="Group 331" transform="translate(-328.379 -25.379)">
+<line id="Line_89" data-name="Line 89" x2="15" y2="15" transform="translate(330.5 27.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+<line id="Line_90" data-name="Line 90" x1="15" y2="15" transform="translate(330.5 27.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+</g>
+</svg>
+          </div>
+        </div>
+      </div>
+      <div class="mobile__nav-body">
+        <div class="mobile__nav-links"><a class="mobile__nav-link" href="#">Подробнее о нас </a><a class="mobile__nav-link" href="#">Подробнее о торговле </a><a class="mobile__nav-link" href="#">Условия работы</a><a class="mobile__nav-link" href="#">Партнерство с нами</a><a class="mobile__nav-link" href="#">FAQ </a><a class="mobile__nav-link" href="#">Контакты </a><a class="mobile__nav-link --border" href="#">Личный кабинет </a><a class="mobile__nav-link" href="#">Партнерский кабинет </a></div>
+        <div class="header__btns"><a class="header__btn --btn-border" href="#">Войти</a><a class="header__btn --btn-white" href="#">Регистрация</a></div>
+        <div class="question__socials"> <a class="main-socials__link" href="#"><img src="./assets/img/socials/in.svg" alt=""></a><a class="main-socials__link" href="#"><img src="./assets/img/socials/tm.svg" alt=""></a><a class="main-socials__link" href="#"><img src="./assets/img/socials/yt.svg" alt=""></a></div>
+      </div>
+    </div>
+    <div class="main-socials-bg"></div>
+    <div class="main-socials"> 
+      <div class="main-socials__links"><a class="main-socials__link" href="#"> <img src="./assets/img/socials/in.svg" alt=""></a><a class="main-socials__link" href="#"> <img src="./assets/img/socials/tm.svg" alt=""></a><a class="main-socials__link" href="#"><img src="./assets/img/socials/yt.svg" alt=""></a></div>
+    </div>
+    <div class="content">
+      <section class="main">
+        <div class="main__center">
+          <div class="container">
+            <h1 class="main__title">Преумножаем криптовалюту <br>от 100% в год с помощью <br>ботов и алгоритмов</h1><a class="main__arrow">Подробнее об Indigo Investment
+              <div class="arrow-link">
+                    <svg class="svgsprite _arrow-link-green">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-link-green"></use>
+                    </svg>
+              </div></a>
+          </div>
+        </div>
+        <div class="main__chart">
+           <picture>
+<source srcset="./assets/img/main/main-chart-mobile.svg" media="(max-width: 600px)">
+<img src="./assets/img/main/main-chart.svg">
+</picture>
+          <div class="main__chart-numbers">100%</div>
+        </div>
+      </section>
+      <section class="experience">
+        <h2 class="--white experience__title">Огромный опыт в&nbsp;крипторынке</h2>
+        <div class="container"> 
+          <div class="experience__list"> 
+            <div class="experience__item">
+              <div class="experience__ico"><img src="./assets/img/experience/1.svg" alt=""></div>
+              <h3 class="experience__item-title">Собственная команда разработчиков</h3>
+              <p class="text experience__text">Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.</p>
+            </div>
+            <div class="experience__item">
+              <div class="experience__ico"><img src="./assets/img/experience/2.svg" alt=""></div>
+              <h3 class="experience__item-title">Торгуем с&nbsp;2015, управляем с&nbsp;2018</h3>
+              <p class="text experience__text">Наша команда торгует совместно с 2015 года. Профессионально управлять средствами мы начали в 2018 году,  в момент разработки нашего первого бота.</p>
+            </div>
+            <div class="experience__item">
+              <div class="experience__ico"><img src="./assets/img/experience/3.svg" alt=""></div>
+              <h3 class="experience__item-title">Команда аналитиков и&nbsp;трейдеров</h3>
+              <p class="text experience__text">Мы собрали многосторонюю full-time команду из аналитиков и трейдеров высокого уровня, которые торгуют и анализируют рынок более 5-ти лет.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="analize"> 
+        <h2 class="analize__title">Самый эффективный анализ</h2>
+        <div class="container"> 
+          <div class="analize__list">
+            <div class="analize__item --ico-1">
+              <h4 class="analize__item-title --white">Сделки крупных <br>игроков</h4>
+              <p class="small-text analize__text">Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.</p>
+            </div>
+            <div class="analize__item --ico-2">
+              <h4 class="analize__item-title --white">Объемы и дельта <br>проторговки</h4>
+              <p class="small-text analize__text">Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.</p>
+            </div>
+            <div class="analize__item --ico-3">
+              <h4 class="analize__item-title --white">Накопления на <br>уровнях</h4>
+              <p class="small-text analize__text">Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.</p>
+            </div>
+            <div class="analize__item --ico-4">
+              <h4 class="analize__item-title --white">Индикаторы <br>технического анализа</h4>
+              <p class="small-text analize__text">Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.</p>
+            </div>
+          </div>
+          <div class="analize__banner"> 
+            <div class="analize__banner-item">
+              <div class="analize__banner-title">Подробнее о методиках управления и выгодах мы регулярно рассказываем в нашем вебинаре </div>
+              <p class="text analize__banner-text">Следующий вебинар уже завтра, запишитесь уже сейчас!</p>
+            </div>
+            <div class="analize__banner-item"><a class="analize__banner-btn" href="#">
+                 Записаться на вебинар
+                <div class="arrow-link">
+                      <svg class="svgsprite _arrow-link-green">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-link-green"></use>
+                      </svg>
+                </div></a>
+              <div class="analize__banner-link"><a href="#">Задать вопрос личному менеджеру</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about"> 
+        <div class="about__wrap">
+          <h2 class="about__title">Чем мы отличаемся от других?</h2>
+          <div class="about__list"> 
+            <div class="about__item --ico-1">
+              <h3 class="about__item-title">Токенизация активов фонда</h3>
+              <p class="about__text">В нашем фонде создана специальная монета на базе блокчейна Waves, которая используется как гарант обеспечения средств в нашем фонде.</p>
+            </div>
+            <div class="about__item --ico-2">
+              <h3 class="about__item-title">Страховой фонд собственных средств</h3>
+              <p class="about__text">Часть средств фонда мы используем в целях страхования рисков от волатильности криптовалютного рынка, помимо этого мы замораживаем определенный процент средств также в качестве "страхового" резерва.</p>
+            </div>
+            <div class="about__item --ico-3">
+              <h3 class="about__item-title">Грамотное усреднение и мани-менеджмент</h3>
+              <p class="about__text">Мы используем систему продуманную систему ордеров, разработанную нами на основе данных о рынке за последние 5 лет, благодаря ей мы находим лучшие точки для усреднения и  безопасно распределяем средства фонда.</p>
+            </div>
+            <div class="about__item --ico-4">
+              <h3 class="about__item-title">Фондовый подход к управлению активами</h3>
+              <p class="about__text">Как в лучших американских фондах - мы используем собственный баланс для усреднения, а также в торговле используем только малую часть средств и постоянно держим резерв для усреднения больших падений. </p>
+            </div>
+          </div>
+          <div class="about__description">+ Персонализированный подход к <br>каждому инвестору</div>
+          <div class="btn-center"><a class="about__btn" href="#">Получить уникальные условия </a></div>
+        </div>
+      </section>
+      <section class="statistic"> 
+        <div class="container"> 
+          <h2 class="statistic__title --white">Статистика говорит за себя</h2>
+          <div class="statistic__list">
+            <div class="static-chart">
+              <div class="static-chart__left">
+                <div class="static-chart__small-title">Ваш доход</div>
+                <div class="static-chart__money">-</div>
+                <div class="static-chart__procent">-</div>
+                <div class="static-chart__description">Благодаря своему R&D отделу мы разработали огромную массу полезных торговых индикаторов, инструментов, а также ботов, которые приносят прибыль.</div>
+              </div>
+              <div class="static-chart__right">
+                <div class="static-year__description">Статистика за последние 2 года</div>
+                <div class="static-years">
+                  <div class="static-year" data-chart="2019">2019</div>
+                  <div class="static-year active" data-chart="2020">2020</div>
+                </div>
+              </div>
+              <div class="chart__imgs chart__imgs-mobile" data-chart="2019"><svg xmlns="http://www.w3.org/2000/svg" width="336.924" height="336.496" viewBox="0 0 336.924 336.496">
+<g id="Group_329" data-name="Group 329" transform="translate(-1057.966 -1695.035)">
+<path id="Path_54" data-name="Path 54" d="M10873.24,12051l39.258-106.637,43.461,21.1,42.831-59.838,37.169-84.54,37.2-24.087,46.513,69.043,48.451-33.189s36.4-37.148,36.762-35.107.027,253.226.027,253.226Z" transform="translate(-9813.001 -10021)" fill="#02e9b9" opacity="0.1"/>
+<path id="Path_53" data-name="Path 53" d="M10872.89,12050.607l39.517-87.361,39.624-28.437,44.774-82.267,39.526-10.156,45.185-16.25,39.115-68.047,44.664,40.625,39.214-82.032" transform="translate(-9813 -10021)" fill="none" stroke="#02e9b9" stroke-width="3" stroke-dasharray="5 10"/>
+<path id="Path_55" data-name="Path 55" d="M10872.891,12050.7l39.084-106.789,44.87,21.594,42.113-60.783,37.229-83.177,44.926-15.2,39.3,59.984,47-32.791,36.682-34.773" transform="translate(-9813.001 -10021.091)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="3" stroke-dasharray="5 0"/>
+<line id="Line_59" data-name="Line 59" y2="172" transform="translate(1141.973 1857.909)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<line id="Line_61" data-name="Line 61" y2="254" transform="translate(1225.945 1775.909)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<line id="Line_63" data-name="Line 63" y2="333.909" transform="translate(1310.917 1696)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<g id="Group_148" data-name="Group 148" transform="translate(1129.971 1893.944)">
+<rect id="Rectangle_129" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+<text id="_16_4_" data-name="+16,4%" transform="translate(9 26)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+16,4%</tspan></text>
+</g>
+<rect id="Rectangle_152" data-name="Rectangle 152" width="8" height="8" rx="4" transform="translate(1138.973 1939.938)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_149" data-name="Group 149" transform="translate(1198.94 1755.966)">
+<rect id="Rectangle_129-2" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+<text id="_41_4_" data-name="+41,4%" transform="translate(9 26)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+41,4%</tspan></text>
+</g>
+<rect id="Rectangle_153" data-name="Rectangle 153" width="8" height="8" rx="4" transform="translate(1218.945 1795.959)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_150" data-name="Group 150" transform="translate(1273.89 1799.959)">
+<rect id="Rectangle_129-3" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+<text id="_71_4_" data-name="+71,4%" transform="translate(6.95 26.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+71,4%</tspan></text>
+</g>
+<rect id="Rectangle_154" data-name="Rectangle 154" width="8" height="8" rx="4" transform="translate(1302.917 1839.939)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_151" data-name="Group 151" transform="translate(1319.89 1730)">
+<rect id="Rectangle_129-4" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+<text id="_98_7_" data-name="+98,7%" transform="translate(6.84 26.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+98,7%</tspan></text>
+</g>
+<rect id="Rectangle_155" data-name="Rectangle 155" width="8" height="8" rx="4" transform="translate(1386.89 1773)" fill="#02e9b9" opacity="0.8"/>
+</g>
+</svg>
+              </div>
+              <div class="chart__imgs chart__imgs-mobile active" data-chart="2020"><svg xmlns="http://www.w3.org/2000/svg" width="334.366" height="380.891" viewBox="0 0 334.366 380.891">
+<g id="Group_329" data-name="Group 329" transform="translate(-1058.523 -1650)">
+<path id="Path_54" data-name="Path 54" d="M10873.24,12051l39.427-87.754,39.644-28.437,44.795-82.267,39.544-10.156,45.206-16.25,39.133-68.047,44.684,40.625s38.889-84.451,39.248-82.411,0,334.668,0,334.668Z" transform="translate(-9813.001 -10021)" fill="#02e9b9" opacity="0.1"/>
+<path id="Path_53" data-name="Path 53" d="M10872.89,12050.607l39.517-87.361,39.624-28.437,44.774-82.267,39.526-10.156,45.185-16.25,39.115-68.047,44.664,40.625,39.214-82.032" transform="translate(-9813 -10021)" fill="none" stroke="#02e9b9" stroke-width="3"/>
+<path id="Path_55" data-name="Path 55" d="M10872.891,12050.7l39.084-106.789,44.87,21.594,42.113-60.783,37.229-83.177,44.926-15.2,39.3,59.984,47-32.791,36.682-34.773" transform="translate(-9813.001 -10021.091)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="2" stroke-dasharray="5 10"/>
+<line id="Line_59" data-name="Line 59" y2="172" transform="translate(1141.973 1857.909)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<line id="Line_61" data-name="Line 61" y2="254" transform="translate(1225.945 1775.909)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<line id="Line_63" data-name="Line 63" y2="333.909" transform="translate(1310.917 1696)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<g id="Group_148" data-name="Group 148" transform="translate(1129.971 1857.944)">
+<rect id="Rectangle_129" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+<text id="_16_4_" data-name="+16,4%" transform="translate(9 26)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+16,4%</tspan></text>
+</g>
+<rect id="Rectangle_152" data-name="Rectangle 152" width="8" height="8" rx="4" transform="translate(1138.973 1903.938)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_149" data-name="Group 149" transform="translate(1201.94 1775.966)">
+<rect id="Rectangle_129-2" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+<text id="_41_4_" data-name="+41,4%" transform="translate(9 26)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+41,4%</tspan></text>
+</g>
+<rect id="Rectangle_153" data-name="Rectangle 153" width="8" height="8" rx="4" transform="translate(1221.945 1815.959)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_150" data-name="Group 150" transform="translate(1275.89 1695)">
+<rect id="Rectangle_129-3" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+<text id="_71_4_" data-name="+71,4%" transform="translate(6.95 26.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+71,4%</tspan></text>
+</g>
+<rect id="Rectangle_154" data-name="Rectangle 154" width="8" height="8" rx="4" transform="translate(1304.917 1734.979)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_151" data-name="Group 151" transform="translate(1317.89 1650)">
+<rect id="Rectangle_129-4" data-name="Rectangle 129" width="70" height="40" rx="10" fill="#162633"/>
+<text id="_98_7_" data-name="+98,7%" transform="translate(6.84 26.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+98,7%</tspan></text>
+</g>
+<rect id="Rectangle_155" data-name="Rectangle 155" width="8" height="8" rx="4" transform="translate(1384.89 1693)" fill="#02e9b9" opacity="0.8"/>
+</g>
+</svg>
+              </div>
+              <div class="chart__imgs chart__imgs-desktop" data-chart="2019"><svg xmlns="http://www.w3.org/2000/svg" width="1089.537" height="336.973" viewBox="0 0 1089.537 336.973">
+<g id="Group_333" data-name="Group 333" transform="translate(-13611.776 4055.161)">
+<path id="Path_139" data-name="Path 139" d="M10873.239,12051.091l128.057-107.353,145.729,21.872,138.61-60.53,122.586-83.674,146.858-15.116,129.247,59.9,156.377-33.391s118.119-37.508,119.3-35.469-1.348,253.73-1.348,253.73Z" transform="translate(2741 -15771)" fill="#02e9b9" opacity="0.1"/>
+<path id="Path_140" data-name="Path 140" d="M10872.89,12050.7l129.376-87.385,129.734-28.445,146.593-82.289L11408,11842.42l147.935-16.254L11684,11758.1l146.229,40.636,128.39-82.055" transform="translate(2741 -15771)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="2" stroke-dasharray="5 10"/>
+<path id="Path_141" data-name="Path 141" d="M10872.89,12050.7l128.079-106.789L11148,11965.5l138-60.783,122-83.177,147.217-15.2,128.783,59.984,154-32.791,120.2-34.773" transform="translate(2741 -15771)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="3"/>
+<line id="Line_90" data-name="Line 90" y2="172" transform="translate(13889 -3892)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<line id="Line_91" data-name="Line 91" y2="254" transform="translate(14152 -3974)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<line id="Line_92" data-name="Line 92" y2="334" transform="translate(14425 -4054)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<g id="Group_329" data-name="Group 329" transform="translate(11980 -4321)">
+<rect id="Rectangle_129" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 465)" fill="#162633"/>
+<text id="_8_2_" data-name="+8,2%" transform="translate(1922 491)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+8,2%</tspan></text>
+</g>
+<rect id="Rectangle_164" data-name="Rectangle 164" width="8" height="8" rx="4" transform="translate(13885 -3810)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_330" data-name="Group 330" transform="translate(12242 -4416)">
+<rect id="Rectangle_129-2" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1914 422)" fill="#162633"/>
+<text id="_54_4_" data-name="+54,4%" transform="translate(1923 448)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+54,4%</tspan></text>
+</g>
+<rect id="Rectangle_165" data-name="Rectangle 165" width="8" height="8" rx="4" transform="translate(14148 -3954)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_331" data-name="Group 331" transform="translate(12518 -4372)">
+<rect id="Rectangle_129-3" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 422)" fill="#162633"/>
+<text id="_32_4_" data-name="+32,4%" transform="translate(1919.84 448.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+32,4%</tspan></text>
+</g>
+<rect id="Rectangle_166" data-name="Rectangle 166" width="8" height="8" rx="4" transform="translate(14421 -3910)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_332" data-name="Group 332" transform="translate(12713 -4441)">
+<rect id="Rectangle_129-4" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 422)" fill="#162633"/>
+<text id="_58_7_" data-name="+58,7%" transform="translate(1919.84 448.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+58,7%</tspan></text>
+</g>
+<rect id="Rectangle_167" data-name="Rectangle 167" width="8" height="8" rx="4" transform="translate(14693 -3976)" fill="#02e9b9" opacity="0.8"/>
+</g>
+</svg>
+              </div>
+              <div class="chart__imgs chart__imgs-desktop active" data-chart="2020"><svg xmlns="http://www.w3.org/2000/svg" width="1088.519" height="381.106" viewBox="0 0 1088.519 381.106">
+<g id="Group_333" data-name="Group 333" transform="translate(-13612.481 4100)">
+<path id="Path_139" data-name="Path 139" d="M10873.239,12051.091l129.026-87.777,129.734-28.445,146.593-82.289L11408,11842.42l147.935-16.254L11684,11758.1l146.229,40.636s127.262-84.474,128.439-82.434-.016,334.759-.016,334.759Z" transform="translate(2741 -15771)" fill="#02e9b9" opacity="0.1"/>
+<path id="Path_140" data-name="Path 140" d="M10872.89,12050.7l129.376-87.385,129.734-28.445,146.593-82.289L11408,11842.42l147.935-16.254L11684,11758.1l146.229,40.636,128.39-82.055" transform="translate(2741 -15771)" fill="none" stroke="#02e9b9" stroke-width="3"/>
+<path id="Path_141" data-name="Path 141" d="M10872.89,12050.7l128.079-106.789L11148,11965.5l138-60.783,122-83.177,147.217-15.2,128.783,59.984,154-32.791,120.2-34.773" transform="translate(2741 -15771)" fill="none" stroke="#02e9b9" stroke-linecap="round" stroke-width="2" stroke-dasharray="5 10"/>
+<line id="Line_90" data-name="Line 90" y2="172" transform="translate(13880 -3892)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<line id="Line_91" data-name="Line 91" y2="254" transform="translate(14156 -3974)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<line id="Line_92" data-name="Line 92" y2="334" transform="translate(14432 -4054)" fill="none" stroke="#fff" stroke-width="1" opacity="0.2"/>
+<g id="Group_329" data-name="Group 329" transform="translate(11971 -4357)">
+<rect id="Rectangle_129" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 465)" fill="#162633"/>
+<text id="_16_4_" data-name="+16,4%" transform="translate(1922 491)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+16,4%</tspan></text>
+</g>
+<rect id="Rectangle_164" data-name="Rectangle 164" width="8" height="8" rx="4" transform="translate(13876 -3846)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_330" data-name="Group 330" transform="translate(12246 -4396)">
+<rect id="Rectangle_129-2" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1914 422)" fill="#162633"/>
+<text id="_41_4_" data-name="+41,4%" transform="translate(1923 448)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+41,4%</tspan></text>
+</g>
+<rect id="Rectangle_165" data-name="Rectangle 165" width="8" height="8" rx="4" transform="translate(14152 -3934)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_331" data-name="Group 331" transform="translate(12525 -4477)">
+<rect id="Rectangle_129-3" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 422)" fill="#162633"/>
+<text id="_71_4_" data-name="+71,4%" transform="translate(1919.84 448.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+71,4%</tspan></text>
+</g>
+<rect id="Rectangle_166" data-name="Rectangle 166" width="8" height="8" rx="4" transform="translate(14428 -4015)" fill="#02e9b9" opacity="0.8"/>
+<g id="Group_332" data-name="Group 332" transform="translate(12713 -4522)">
+<rect id="Rectangle_129-4" data-name="Rectangle 129" width="70" height="40" rx="10" transform="translate(1913 422)" fill="#162633"/>
+<text id="_98_7_" data-name="+98,7%" transform="translate(1919.84 448.667)" fill="#02e9b9" font-size="16" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500"><tspan x="0" y="0">+98,7%</tspan></text>
+</g>
+<rect id="Rectangle_167" data-name="Rectangle 167" width="8" height="8" rx="4" transform="translate(14693 -4057)" fill="#02e9b9" opacity="0.8"/>
+</g>
+</svg>
+              </div>
+            </div>
+            <div class="calculate">
+              <form class="calculate__form">
+                <div class="calculate__title">Калькулятор дохода</div>
+                <div class="calculate__block">
+                  <div class="calculate__description">В какой валюте вы хотите инвестировать?</div>
+                  <div class="calculate__radios calculate__radios--money">
+                    <label class="radio">
+                      <input type="radio" value="ETH" name="money" data-ico="Ð">
+                      <div class="radio__text">ETH</div>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" value="USD" name="money" data-ico="$" checked>
+                      <div class="radio__text">USD</div>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" value="RUB" name="money" data-ico="₽">
+                      <div class="radio__text">RUB</div>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" value="BTC" name="money" data-ico="₿">
+                      <div class="radio__text">BTC</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="calculate__block">
+                  <div class="calculate__description">Сумма инвестирования:</div>
+                  <input class="calculate__input" type="text" placeholder="0" value="500">
+                </div>
+                <div class="calculate__block">
+                  <div class="calculate__description">Срок инвестирования:</div>
+                  <div class="calculate__radios calculate__radios--month">
+                    <label class="radio radio--big">
+                      <input type="radio" name="month" data-month="3">
+                      <div class="radio__text">3 мес.</div>
+                    </label>
+                    <label class="radio radio--big">
+                      <input type="radio" name="month" data-month="6">
+                      <div class="radio__text">6 мес.</div>
+                    </label>
+                    <label class="radio radio--big">
+                      <input type="radio" name="month" data-month="12" checked>
+                      <div class="radio__text">12 мес.</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="calculate__block calculate__block--summ">
+                  <div class="calculate__description">Ваша доходность составит:</div>
+                  <div class="calculate__summ">-</div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="calulate__link-wrap"><a class="calulate__link" href="#">
+               Инвестировать с Indigo
+              <div class="arrow-link">
+                    <svg class="svgsprite _arrow-link-green">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-link-green"></use>
+                    </svg>
+              </div></a></div>
+        </div>
+      </section>
+      <section class="subscribe"> 
+        <div class="container"> 
+          <div class="subscribe__list">
+            <div class="subscribe__item">
+              <div class="subscribe__item-title">Подпишитесь на нашу рассылку, чтобы регулярно получать статистику фонда Indigo Investment</div>
+              <div class="subscribe__item-text">Мы отправляем наши рассылки не чаще трех раз в месяц и не любим спам</div>
+            </div>
+            <form class="subscribe__form"> 
+              <input class="subscribe__input" type="text" placeholder="Введите ваш имейл">
+              <button class="subscribe__button">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="allstat"> 
+        <div class="allstat__list"> 
+          <div class="allstat__item"> 
+            <h3 class="allstat__title" data-number="6000" data-prefix="&gt;">>0</h3>
+            <p class="text allstat__text">Людей в нашем <br>сообществе</p>
+          </div>
+          <div class="allstat__item"> 
+            <h3 class="allstat__title" data-number="150000" data-prefix="&gt;$">>$0</h3>
+            <p class="text allstat__text">Общая сумма под <br>управлением нашим фондом</p>
+          </div>
+          <div class="allstat__item"> 
+            <h3 class="allstat__title" data-number="2000" data-prefix="&gt;$">>$0</h3>
+            <p class="text allstat__text">Средний доход на 1 <br>инвестора</p>
+          </div>
+          <div class="allstat__item"> 
+            <h3 class="allstat__title" data-number="120000" data-prefix="&gt;$">>$0</h3>
+            <p class="text allstat__text">Суммарно выплачено нашим <br>инвесторам</p>
+          </div>
+        </div>
+      </section>
+      <section class="work"> 
+        <h3 class="work__small-title">Работать с нами просто</h3>
+        <div class="work__title">до 50% от дохода</div>
+        <p class="text work__text">Мы выплачиваем от дохода инвесторам, которые приобрели монету RLBTRADE. <br>Это значит, что от годового дохода фонда Indigo Investment в 100%, ровно половину - получают наши инвесторы, купившие монету.</p><a class="work__btn" href="#">Зарегистрироваться и приобрести монету 
+          <div class="arrow-link">
+                <svg class="svgsprite _arrow-link-green">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-link-green"></use>
+                </svg>
+          </div></a>
+      </section>
+      <section class="report"> 
+        <h2 class="report__title">О нас говорят</h2>
+        <div class="report__list"> 
+          <div class="report__item"> </div>
+          <div class="report__item"> </div>
+          <div class="report__item"> </div>
+        </div>
+      </section>
+      <sections class="partners"> 
+        <div class="partners__main">
+          <h2 class="partners__green-title">Партнерская программа Indigo</h2>
+          <h2 class="partners__title">до 10% от дохода</h2>
+          <h4 class="partners__description">Мы выплачиваем партнерам нашего фонда</h4><a class="partners__btn" href="#">Узнать подробнее о программе</a>
+        </div>
+        <div class="partners__info">
+          <div class="partners__list"> 
+            <div class="partners__left"> 
+              <div class="partners__item --pi-1">
+                <div class="partners__item-ico"> <img src="./assets/img/partners/1.svg" alt=""></div>
+                <div class="partners__item-text">Персональный <br>подход</div>
+              </div>
+              <div class="partners__item --pi-2"> 
+                <div class="partners__item-ico"> <img src="./assets/img/partners/2.svg" alt=""></div>
+                <div class="partners__item-text">Многоуровневая <br>система</div>
+              </div>
+              <div class="partners__item --pi-3">
+                <div class="partners__item-ico"> <img src="./assets/img/partners/3.svg" alt=""></div>
+                <div class="partners__item-text">Регулярные <br>бонусы</div>
+              </div>
+            </div>
+            <div class="partners__right">
+              <div class="partners__item --pi-4">
+                <div class="partners__item-ico"> <img src="./assets/img/partners/4.svg" alt=""></div>
+                <div class="partners__item-text">Лучшие <br>условия</div>
+              </div>
+              <div class="partners__item --pi-5">
+                <div class="partners__item-ico"> <img src="./assets/img/partners/5.svg" alt=""></div>
+                <div class="partners__item-text">Личный <br>менеджер</div>
+              </div>
+              <div class="partners__item --pi-6">
+                <div class="partners__item-ico"> <img src="./assets/img/partners/6.svg" alt=""></div>
+                <div class="partners__item-text">Система <br>из 4 уровней</div>
+              </div>
+            </div>
+          </div>
+        </div><a class="partners__btn partners__btn--mobile" href="#">Узнать подробнее о программе</a>
+      </sections>
+      <section class="faq">
+        <div class="container"> 
+          <h2 class="faq__title">Частые вопросы</h2>
+          <div class="accardeon"> 
+            <div class="accardeon__item"> 
+              <div class="accardeon__main">Как купить монету RLBTRADE?</div>
+              <div class="accardeon__drop">
+                <p>Пригласить людей очень просто. Достаточно зарегистрироваться на нашем сайте и получить доступ к личному кабинету, в котором указаны все условия работы с партнерами. В кабинете также будет отображена вся необходимая вам статистика по вашим приглашенным людям. Если вас интересуют индивидуальные условия - свяжитесь с нашим менеджером по форме ниже.</p>
+              </div>
+            </div>
+            <div class="accardeon__item"> 
+              <div class="accardeon__main">Как происходят расчеты с инвесторами?</div>
+              <div class="accardeon__drop">
+                <p>Пригласить людей очень просто. Достаточно зарегистрироваться на нашем сайте и получить доступ к личному кабинету, в котором указаны все условия работы с партнерами. В кабинете также будет отображена вся необходимая вам статистика по вашим приглашенным людям. Если вас интересуют индивидуальные условия - свяжитесь с нашим менеджером по форме ниже.</p>
+              </div>
+            </div>
+            <div class="accardeon__item"> 
+              <div class="accardeon__main">Как пригласить людей присоединиться и какие условия для партнеров? </div>
+              <div class="accardeon__drop">
+                <p>Пригласить людей очень просто. Достаточно зарегистрироваться на нашем сайте и получить доступ к личному кабинету, в котором указаны все условия работы с партнерами. В кабинете также будет отображена вся необходимая вам статистика по вашим приглашенным людям. Если вас интересуют индивидуальные условия - свяжитесь с нашим менеджером по форме ниже.</p>
+                <p>Пригласить людей очень просто. Достаточно зарегистрироваться на нашем сайте и получить доступ к личному кабинету, в котором указаны все условия работы с партнерами.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question"> 
+        <div class="container">
+          <h2 class="question__title --mobile">Остались вопросы?</h2>
+          <div class="question__description --mobile">С радостью готовы вам на них ответить!</div>
+          <form class="question__form">
+            <h2 class="question__title">Остались вопросы?</h2>
+            <div class="question__description">С радостью готовы вам на них ответить!</div>
+            <div class="question__list">
+              <div class="question__item">
+                <div class="question__inputs">
+                  <input class="question__input" type="text" placeholder="Ваше имя">
+                  <input class="question__input" type="text" placeholder="Ваш имейл">
+                  <input class="question__input" type="text" placeholder="Телефон">
+                  <input class="question__input" type="text" placeholder="Ссылка на соцсети">
+                </div>
+                <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
+                <button class="question__btn" type="submit">Отправить сообщение
+                  <div class="arrow-link">
+                        <svg class="svgsprite _arrow-link-green">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-link-green"></use>
+                        </svg>
+                  </div>
+                </button>
+              </div>
+              <div class="question__item question__item--contacts">
+                <div class="question__contacts">
+                  <div class="question__contact">
+                    <div class="question__contacts-title">Мы в соцсетях:</div>
+                    <div class="question__socials"> <a class="main-socials__link main-socials__link-in" href="#"><img src="./assets/img/socials/in.svg" alt=""></a><a class="main-socials__link main-socials__link-tm" href="#"><img src="./assets/img/socials/tm.svg" alt=""></a><a class="main-socials__link main-socials__link-yt" href="#"><img src="./assets/img/socials/yt.svg" alt=""></a></div>
+                  </div>
+                  <div class="question__contact">
+                    <div class="question__contacts-title">Свяжитесь с нами:</div><a class="question__contacts-link" href="mailto:info@indigoinvest.pro">info@indigoinvest.pro </a>
+                  </div>
+                  <div class="question__contact">
+                    <div class="question__contacts-title">Телефон:</div><a class="question__contacts-link" href="tel:+433822832322">+43 382 283 23 22</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__left">
+          <div class="footer__logo"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="220.435" height="71.48" viewBox="0 0 220.435 71.48">
+              <g id="logo" transform="translate(-63.5 -197)">
+                <g id="Group_2" data-name="Group 2" transform="translate(63.5 210.576)">
+                  <path id="Path_3" data-name="Path 3" d="M-2179.857-358l-14.483,8.951v25.574l7.159,4.348,17.939-10.741v4.433l-17.939,11-10.863-6.393v-26.256l-3.621,2.387v26.085l14.483,8.354,21.642-13.213V-331.4l-17.939-10.741,3.621-2.557,18.268,11.167v12.7l-21.889,12.957,3.621,2.557,21.478-13.3v-17.049l-21.478-13.384-6.83,4.348v21.738l-3.868-2.472v-21.652l10.7-6.479,21.478,13.128V-344.7Z" transform="translate(2201.664 358.001)" fill="#02E9B9"></path>
+                </g>
+                <g id="Group_4" data-name="Group 4" transform="translate(120.935 197)">
+                  <text id="Indigo" transform="translate(81 54)" fill="#fff" font-size="57" font-family="SFProDisplay-Bold, SF Pro Display" font-weight="700">
+                    <tspan x="-81.005" y="0">Indigo</tspan>
+                  </text>
+                  <text id="Investment_Group" data-name="Investment Group" transform="translate(41 68.48)" fill="#fff" font-size="11" font-family="SFProDisplay-Regular, SF Pro Display" opacity="0.5">
+                    <tspan x="-40.944" y="0">Investment Group</tspan>
+                  </text>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <nav class="footer__nav">
+            <div class="footer__title">Больше о нас</div>
+            <div class="footer__link"> <a href="#">Подробнее о нас</a></div>
+            <div class="footer__link"><a href="#">Подробнее о торговле</a></div>
+            <div class="footer__link"><a href="#">Условия работы</a></div>
+            <div class="footer__link"><a href="#">Партнерская программа</a></div>
+            <div class="footer__link"><a href="#">FAQ</a></div>
+            <div class="footer__link"><a href="#">Контакты</a></div>
+          </nav>
+        </div>
+        <div class="footer__info"> 
+          <div class="footer__title">Для всех запросов:</div><a class="footer__email" href="mailto:info@indigoinvest.pro">info@indigoinvest.pro</a>
+          <div class="footer__socials"> <a class="footer__social"></a><a class="footer__social"></a><a class="footer__social"></a></div>
+          <div class="footer__langs"> <a class="footer__lang">En</a><a class="footer__lang active">Ru</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__description"> 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus, repudiandae, blanditiis hic officiis rem molestiae inventore consequatur ea a, vero labore nihil eos facilis minus illo. Amet, saepe architecto?Hic incidunt neque minus, voluptas eveniet voluptatum, unde facere dignissimos ratione commodi totam mollitia ipsa dicta impedit. Corrupti non odio nihil, quasi amet dignissimos omnis rem totam esse quidem dolorum.Harum nulla maiores consequuntur, accusamus cum dolore fuga enim nesciunt eaque, nam in mollitia natus! </p><a class="footer__anchor" href="#top"><img src="./assets/img/form/arrow-top.svg" alt=""></a>
+        </div>
+        <div class="footer__political"><a href="#">Пользовательское соглашение </a><a href="#">Политика конфиденциальности</a></div>
+      </div>
+    </footer>
+    <div class="hidden">
+      <!-- include popups here-->
+    </div>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="assets/js/vendors~main.bundle.js"></script>
+    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  </body>
+</html>
